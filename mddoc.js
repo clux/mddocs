@@ -2,9 +2,11 @@
 var fs = require('fs');
 var path = require('path');
 var marked = require('marked');
+var exec = require('child_process').execSync;
 var argv = require('yargs')
-    .usage('Usage: $0 file.md')
+    .usage('Usage: $0 file.md -u [user]')
     .demand(1)
+    .alias('u', 'user')
     .argv;
 
 var file = argv._[0];
@@ -23,7 +25,7 @@ var pkg = require(path.join(process.cwd(), 'package.json'));
 var version = pkg.version;
 var name = pkg.name;
 var namePretty = name.charAt(0).toUpperCase() + name.slice(1);
-var gituser = 'clux'; //git config --get user.name
+var gituser = argv.user || 'clux';
 
 var template = `<!doctype html>
 <html lang="en">

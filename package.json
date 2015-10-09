@@ -12,6 +12,7 @@
     "mddoc": "mddoc.js"
   },
   "scripts": {
+    "pretest": "cd test && mddoc api.md -u woot > api.html",
     "test": "bndg test/*.js",
     "coveralls": "echo tests first"
   },
@@ -21,7 +22,8 @@
     "yargs": "^3.27.0"
   },
   "devDependencies": {
-    "bandage": "^0.2.1"
+    "bandage": "^0.2.1",
+    "co-fs": "^1.2.0"
   },
   "bugs": {
     "url": "http://github.com/clux/mddocs/issues"

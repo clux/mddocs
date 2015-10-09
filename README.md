@@ -10,11 +10,8 @@ An unconfigurable docs generator from markdown with syntax highlighting. Designe
 Give it a file to parse and save result.
 
 ```shell
-mddoc api.md > api.html
+mddoc api.md -u clux > api.html
 ```
-
-TODO: collection API for multi-page.
-
 
 ## License
 MIT-Licensed. See LICENSE file for details.
