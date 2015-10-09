@@ -13,8 +13,7 @@
   },
   "scripts": {
     "pretest": "cd test && mddoc api.md -u woot > api.html",
-    "test": "bndg test/*.js",
-    "coveralls": "echo tests first"
+    "test": "bndg test/*.js"
   },
   "dependencies": {
     "highlight.js": "^8.8.0",
