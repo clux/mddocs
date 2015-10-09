@@ -2,7 +2,6 @@
 var fs = require('fs');
 var path = require('path');
 var marked = require('marked');
-var exec = require('child_process').execSync;
 var argv = require('yargs')
     .usage('Usage: $0 file.md -u [user]')
     .demand(1)
@@ -31,7 +30,7 @@ var template = `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>${name} Documentation v${version}</title>
+  <title>${namePretty} Documentation v${version}</title>
   <link rel="canonical" href="https://${gituser}.github.io/${name}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
