@@ -1,0 +1,30 @@
+{
+  "name": "mddocs",
+  "description": "A simple doc generator for gh-pages when writing documentation in markdown",
+  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "clux/mddocs"
+  },
+  "keywords": [],
+  "bin": {
+    "mddoc": "mddoc.js"
+  },
+  "scripts": {
+    "test": "bndg test/*.js",
+    "coveralls": "echo tests first"
+  },
+  "dependencies": {
+    "highlight.js": "^8.8.0",
+    "marked": "^0.3.5",
+    "yargs": "^3.27.0"
+  },
+  "devDependencies": {
+    "bandage": "^0.2.1"
+  },
+  "bugs": {
+    "url": "http://github.com/clux/mddocs/issues"
+  },
+  "license": "MIT"
+}
