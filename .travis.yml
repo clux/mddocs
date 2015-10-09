@@ -8,5 +8,8 @@ node_js:
 notifications:
   email: false
 
+before_script:
+  - npm link
+
 after_script:
   - npm run coveralls
