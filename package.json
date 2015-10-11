@@ -9,8 +9,9 @@
   },
   "keywords": [],
   "bin": {
-    "mddoc": "mddoc.js"
+    "mddoc": "cli.js"
   },
+  "main": "lib/",
   "scripts": {
     "pretest": "cd test && mddoc api.md -u woot > api.html",
     "test": "bndg test/*.js"
