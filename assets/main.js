@@ -10,7 +10,8 @@ var generateToc = function (children) {
         activeLevel += goingUp ? 1 : -1;
         toc.push(goingUp ? '<ul>' : '</ul>');
       }
-      toc.push('<li>' + node.innerText + '</li>');
+      // TODO: sensible anchor link
+      toc.push('<li><a href=#>' + node.innerText + '</a></li>');
     }
   });
 
