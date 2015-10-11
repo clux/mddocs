@@ -11,7 +11,6 @@ var generateToc = function (children) {
         toc.push(goingUp ? '<ul>' : '</ul>');
       }
       toc.push('<li>' + node.innerText + '</li>');
-      activeLevel = level;
     }
   });
 
