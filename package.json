@@ -15,7 +15,8 @@
   "scripts": {
     "pretest": "cd test && mddoc api.md -u woot > api.html",
     "test": "bndg test/*.js",
-    "coverage": "istanbul cover bndg test/*.test.js && cat coverage/lcov.info"
+    "coverage": "istanbul cover bndg test/*.test.js && cat coverage/lcov.info",
+    "coveralls": "npm run coverage | coveralls"
   },
   "dependencies": {
     "co": "^4.6.0",
