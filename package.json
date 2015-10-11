@@ -14,7 +14,8 @@
   "main": "lib/",
   "scripts": {
     "pretest": "cd test && mddoc api.md -u woot > api.html",
-    "test": "bndg test/*.js"
+    "test": "bndg test/*.js",
+    "coverage": "istanbul cover bndg test/*.test.js && cat coverage/lcov.info"
   },
   "dependencies": {
     "co": "^4.6.0",
@@ -24,7 +25,8 @@
   },
   "devDependencies": {
     "bandage": "^0.2.1",
-    "co-fs": "^1.2.0"
+    "co-fs": "^1.2.0",
+    "istanbul": "^0.3.22"
   },
   "bugs": {
     "url": "http://github.com/clux/mddocs/issues"
