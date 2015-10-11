@@ -11,7 +11,7 @@ var argv = require('yargs')
 var file = argv._[0];
 
 // read markdown input and relevant package properties
-var md = fs.readFileSync(file).toString();
+var md = fs.readFileSync(file);
 var pkg = require(path.join(process.cwd(), 'package.json'));
 
 var opts = {
