@@ -6,8 +6,8 @@ var findHeadings = function (children) {
 
 var anchorize = function (text, linktext) {
   var safelink = text.replace(/\W/g, '_').replace(/_{2,}/g, '_');
-  var idstr = linktext === '#' ? ' id="'+ safelink + '" ': '';
-  return '<a ' + idstr + 'href="#' + safelink + '">' + (linktext || text) + '</a>';
+  var idstr = !linktext ? ' ' : ' id="'+ safelink + '" ';
+  return '<a class="mark"' + idstr + 'href="#' + safelink + '">' + (linktext || text) + '</a>';
 };
 
 var insertAnchors = function (headings) {

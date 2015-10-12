@@ -9,7 +9,7 @@ body {
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   font-size: 62.5%;
   margin: 0;
-  padding: 0;
+  padding-left: 10px;
   color: #3a3a3a;
   background: #fcfefa;
 }
@@ -201,4 +201,17 @@ hr {
 
 #toc ul a:hover,
 #toc ul a:focus {
+}
+
+span > .mark,
+span > .mark:visited {
+  font-size: 18px;
+  color: #707070;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+span > .mark:hover {
+  color: #FE7110;
 }
