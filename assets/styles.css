@@ -13,3 +13,192 @@ body {
   color: #3a3a3a;
   background: #fcfefa;
 }
+
+a {
+  color: #FE5210;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FE7110;
+}
+
+a:hover,
+a:focus {
+  color: #FFA158;
+}
+
+ol, ul, dl {
+  margin: 0 0 0.6em 0;
+  padding: 0;
+}
+
+ol ul, ol ol, ol dl,
+ul ul, ul ol, ul dl,
+dl ul, dl ol, dl dl {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-left: 2em;
+}
+
+dl dt {
+  position: relative;
+  margin: 1.5em 0 0;
+}
+
+dl dd {
+  position: relative;
+  margin: 0 1em 0;
+}
+
+dd + dt.pre {
+  margin-top: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #301004;
+  text-rendering: optimizeLegibility;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+header h1 {
+  line-height: 2.0em;
+  margin: 0;
+}
+
+#apicontent {
+  padding-top: 1.0em;
+}
+
+#toc + h1 {
+  margin-top: 1em;
+  padding-top: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.0em 0 0.5em;
+}
+
+h2 + h2 {
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  font-size: 1.0em;
+  margin: 1.5em 0 0.5em;
+}
+
+h3 + h3 {
+  margin: 0 0 0.5em;
+}
+
+h2, h3, h4 {
+  position: relative;
+  padding-right: 40px;
+}
+
+h1 span, h2 span, h3 span, h4 span {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+}
+
+h1 span:hover, h2 span:hover, h3 span:hover, h4 span:hover {
+  opacity: 1;
+}
+
+h1 span a, h2 span a, h3 span a, h4 span a {
+  font-size: 0.8em;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+h6 {
+  font-size: 1em;
+  line-height: 1.4667em;
+}
+
+pre, tt, code {
+  line-height: 1.5em;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  margin: 0; padding: 0;
+}
+
+.pre {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+pre {
+  padding: 1.0em 1.5em;
+  vertical-align: top;
+  background: #f2f5f0;
+  margin: 0.166666em -4.0em 1.0em 0em;
+  overflow-x: auto;
+}
+
+pre > code {
+  font-size: 0.8em;
+}
+
+pre + h3 {
+  margin-top: 2.225em;
+}
+
+code.pre {
+  white-space: pre;
+}
+
+hr {
+  background: none;
+  border: medium none;
+  border-bottom: 1px solid #7a7a7a;
+  margin: 0em 0em 1em 0;
+}
+
+#toc {
+}
+
+#toc h2 {
+  color: #C73E09;
+  margin-top: 0;
+  font-size: 1.0em;
+  line-height: 0;
+  margin: 1.5em 0;
+}
+
+#toc ul {
+  font-size: 0.8125em;
+}
+
+#toc ul ul { font-size: 1.0em; }
+
+#toc ul a {
+  text-decoration:none;
+}
+
+#toc ul li {
+  margin-bottom: 0.6666em;
+  list-style: square outside;
+}
+
+#toc li > ul {
+  margin-top: 0.6666em;
+}
+
+#toc ul a:hover,
+#toc ul a:focus {
+}
