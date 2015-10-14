@@ -21,7 +21,7 @@ var opts = {
 };
 
 co(function *() {
-  var res = yield *mddoc(md, opts);
+  var res = yield mddoc(md, opts);
   process.stdout.write(res);
   process.exit(0);
 }).catch(function (err) {
