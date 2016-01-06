@@ -6,7 +6,7 @@ var findHeadings = function (children) {
 
 var anchorize = function (text, linktext) {
   var safelink = text.replace(/\W/g, '_').replace(/_{2,}/g, '_');
-  var idstr = !linktext ? ' ' : ' id="'+ safelink + '" ';
+  var idstr = !linktext ? ' ' : ' id="' + safelink + '" ';
   return '<a class="mark"' + idstr + 'href="#' + safelink + '">' + (linktext || text) + '</a>';
 };
 
@@ -15,6 +15,7 @@ var insertAnchors = function (headings) {
     hx.innerHTML = hx.innerText + '<span>' + anchorize(hx.innerText, '#') + '</span>';
   });
 };
+
 
 var generateToc = function (headings) {
   var toc = ['<h2>Table of Contents</h2>'];
@@ -37,7 +38,7 @@ var generateToc = function (headings) {
   return toc.join('');
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   var toc = document.querySelector('#toc');
   var contents = document.querySelector('#apicontent');
   var headings = findHeadings(contents.children);

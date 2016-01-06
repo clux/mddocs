@@ -17,14 +17,13 @@ var pkg = require(path.join(process.cwd(), 'package.json'));
 var opts = {
   version: pkg.version,
   name: pkg.name,
-  user: argv.user || 'clux'
+  user: argv.user || 'clux',
 };
 
 co(function *() {
   var res = yield mddoc(md, opts);
   process.stdout.write(res);
-  process.exit(0);
 }).catch(function (err) {
-  console.error(err);
+  console.error(err.stack);
   process.exit(1);
 });
