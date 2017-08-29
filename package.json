@@ -1,7 +1,7 @@
 {
   "name": "mddocs",
   "description": "A simple doc generator for gh-pages when writing documentation in markdown",
-  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "author": "Eirik Albrigtsen <sszynrae@gmail.com>",
   "version": "0.2.0",
   "repository": {
     "type": "git",
